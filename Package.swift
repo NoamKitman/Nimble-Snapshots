@@ -15,8 +15,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/uber/ios-snapshot-test-case.git",
                  .upToNextMajor(from: "8.0.0")),
-        .package(url: "https://github.com/Quick/Nimble.git",
-                 .upToNextMajor(from: "12.0.0"))
+        .package(url: "https://github.com/Quick/Nimble.git", branch: "rename_predicate")
     ],
     targets: [
         .target(
